@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Consulta de Produtos</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+    <div class="header">
+        <div class="title-container">
+            <h1>Consulta de Produtos</h1>
+            <h2>Encontre o que você precisa</h2>
+        </div>
+        <img src="{{ url_for('static', filename='imagens/logo.png') }}" alt="Logo" class="logo">
+    </div>
+    
+    <div class="form-container">
+        <form action="/cotacao" method="POST" class="search-form">
+            <label for="filtro">Filtrar por:</label>
+            <select id="filtro" name="filtro">
+                <option value="codigo">Código</option>
+                <option value="empresa">Empresa</option>
+                <option value="descricao">Descrição</option>
+            </select>
+            
+            <label for="nome_produto">Nome do Produto:</label>
+            <input type="text" id="nome_produto" name="nome_produto" required>
+            
+            <button type="submit">Buscar</button>
+        </form>
+        
+        <form action="/todos" method="GET" class="show-all-form">
+            <button type="submit" class="btn">Mostrar Todos os Produtos</button>
+        </form>
+    </div>
+</body>
+</html>

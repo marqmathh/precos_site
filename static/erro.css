@@ -1,0 +1,34 @@
+/* Adicione isso ao seu styles.css */
+
+/* Estilos para a página de erro */
+.error-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Centraliza os itens */
+    margin-top: 50px; /* Margem superior */
+    text-align: center; /* Centraliza o texto */
+}
+
+.error-container h1 {
+    color: #ff0000; /* Cor do título de erro */
+}
+
+.error-container p {
+    font-size: 1.2em; /* Tamanho da fonte */
+    color: #333; /* Cor do texto */
+}
+
+.error-container .btn {
+    margin-top: 20px; /* Margem acima do botão */
+    padding: 10px 20px; /* Espaçamento interno do botão */
+    background-color: #007bff; /* Cor de fundo do botão */
+    color: white; /* Cor do texto do botão */
+    border: none; /* Remove borda padrão */
+    border-radius: 4px; /* Cantos arredondados */
+    cursor: pointer; /* Cursor em forma de mão ao passar sobre o botão */
+    text-decoration: none; /* Remove o sublinhado do link */
+}
+
+.error-container .btn:hover {
+    background-color: #0056b3; /* Cor ao passar o mouse */
+}

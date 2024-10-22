@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Produto Não Encontrado</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='erro.css') }}">
+</head>
+<body>
+    <div class="error-container">
+        <h1>Produto Não Encontrado</h1>
+        <p>Desculpe, mas não encontramos nenhum produto correspondente a "<strong>{{ nome_produto }}</strong>".</p>
+        <a href="/" class="btn">Voltar</a>
+    </div>
+</body>
+</html>

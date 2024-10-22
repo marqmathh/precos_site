@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resultados da Consulta</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='resultado.css') }}">
+</head>
+<body>
+    <div class="header">
+        <div class="title-container">
+            <h1>Resultados da Consulta</h1>
+        </div>
+        <img src="{{ url_for('static', filename='imagens/logo.png') }}" alt="Logo" class="logo">
+    </div>
+    
+    <a href="/">Voltar</a>
+    <table>
+        <tr>
+            <th>Id</th>
+            <th>Empresa</th>
+            <th>Produto</th>
+            <th>Descrição</th>
+            <th>Preço</th>
+        </tr>
+        {% for resultado in resultados %}
+        <tr>
+            <td>{{resultado.id}}</td>
+            <td>{{resultado.empresa}}</td>
+            <td>{{resultado.produto}}</td>
+            <td>{{resultado.descricao}}</td>
+            <td>R$ {{resultado.preco}}</td>
+        </tr>
+        {% endfor %}
+    </table>
+</body>
+</html>

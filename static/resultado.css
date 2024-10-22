@@ -1,0 +1,74 @@
+/* resultado.css */
+
+/* Estilos gerais */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Centraliza todo o conteúdo */
+    background-color: #f8f8f8; /* Cor de fundo clara */
+}
+
+.header {
+    display: flex;
+    justify-content: center; /* Centraliza o conteúdo no meio da header */
+    align-items: center; /* Centraliza verticalmente */
+    width: 100%; /* Largura total */
+    padding: 20px; /* Espaçamento interno */
+    background-color: #fff; /* Cor de fundo da header */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Sombra para destacar */
+}
+
+.title-container {
+    text-align: center; /* Centraliza o texto */
+    flex-grow: 1; /* Permite que o contêiner do título ocupe o espaço disponível */
+    margin-left: 300px; /* Adiciona uma margem à esquerda para mover o texto para a direita */
+}
+
+h1 {
+    margin: 0; /* Remove margem padrão do título */
+}
+
+.logo {
+    width: 250px; /* Tamanho ajustado da imagem */
+    height: auto; /* Mantém a proporção da imagem */
+    margin-left: 20px; /* Margem esquerda para separar da header */
+}
+
+a {
+    margin: 20px; /* Espaço ao redor do link */
+    text-decoration: none; /* Remove o sublinhado do link */
+    color: #007bff; /* Cor do link */
+    font-weight: bold; /* Deixa o texto mais forte */
+}
+
+a:hover {
+    text-decoration: underline; /* Sublinha ao passar o mouse */
+}
+
+table {
+    width: 80%; /* Largura da tabela */
+    border-collapse: collapse; /* Remove espaços entre bordas */
+    margin-top: 20px; /* Espaçamento acima da tabela */
+}
+
+th, td {
+    border: 1px solid #ddd; /* Borda da tabela */
+    padding: 10px; /* Espaçamento interno */
+    text-align: left; /* Alinha texto à esquerda */
+}
+
+th {
+    background-color: #007bff; /* Cor de fundo do cabeçalho */
+    color: #ffffff; /* Cor do texto do cabeçalho */
+}
+
+tr:nth-child(even) {
+    background-color: #f9f9f9; /* Cor de fundo das linhas pares */
+}
+
+tr:hover {
+    background-color: #f1f1f1; /* Cor de fundo ao passar o mouse */
+}
